@@ -265,6 +265,8 @@
 </script>
 
 <script>
+
+    //de test statice
 const transferData = {
     31: { private: 2, neplatite: 2, anulate: 2 },
     15: { private: 1, neplatite: 0, anulate: 1 },
