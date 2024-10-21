@@ -38,6 +38,30 @@
             text-align: center;
         }
 
+        .calendar-header {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    font-weight: bold;
+}
+
+#calendarGrid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-auto-rows: minmax(80px, auto);
+}
+
+.calendar-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.sunday {
+    color: red;
+}
+
 
         @media (max-width: 768px) {
             .calendar-box {
