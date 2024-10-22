@@ -20,18 +20,26 @@
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
             background-color: #fff;
             border-radius: 10px;
+            text-align: center; /* Center the logo */
+        }
+        .login-box img {
+            max-width: 150px; /* Set the maximum width for the logo */
+            margin-bottom: 20px;
         }
         @media (max-width: 768px) {
-        .login-box {
-            width: 90%;
+            .login-box {
+                width: 90%;
+            }
         }
-    }
     </style>
 </head>
 <body class="bg-light">
 
     <div class="login-box">
-        <h2 class="text-center mb-4">Autentificare</h2>
+        <!-- RomanianTransfers Logo -->
+        <img src="path_to_logo/romanian_transfers_logo.png" alt="Logo">
+
+        <h2 class="text-center mb-4" style="margin-top: 25px;">Autentificare</h2>
         <form action="login.php" method="post">
             <div class="mb-3">
                 <label for="email" class="form-label">Email</label>
