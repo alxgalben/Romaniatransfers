@@ -100,19 +100,11 @@
             <form class="row g-3">
                 <div class="col-md-6">
                     <label for="fromLocation" class="form-label">De la</label>
-                    <select id="fromLocation" class="form-select">
-                        <option selected>-- alege --</option>
-                        <option value="1">Location 1</option>
-                        <option value="2">Location 2</option>
-                    </select>
+                    <input type="text" class="form-control" id="fromLocation" placeholder="De la locatie">
                 </div>
                 <div class="col-md-6">
                     <label for="toLocation" class="form-label">La</label>
-                    <select id="toLocation" class="form-select">
-                        <option selected>-- alege --</option>
-                        <option value="1">Location 1</option>
-                        <option value="2">Location 2</option>
-                    </select>
+                    <input type="text" class="form-control" id="toLocation" placeholder="La locatie">
                 </div>
                 <div class="col-md-12 text-end">
                     <button type="submit" class="btn btn-warning">Cauta</button>
@@ -132,11 +124,7 @@
                 </div>
                 <div class="col-md-3">
                     <label for="fromLocationSearch" class="form-label">Locatie plecare</label>
-                    <select id="fromLocationSearch" class="form-select">
-                        <option selected>oricare</option>
-                        <option value="1">Location 1</option>
-                        <option value="2">Location 2</option>
-                    </select>
+                    <input type="text" class="form-control" id="fromLocationSearch" placeholder="Locatie plecare">
                 </div>
                 <div class="col-md-3">
                     <label for="flightNumber" class="form-label">Numar zbor</label>
@@ -144,11 +132,7 @@
                 </div>
                 <div class="col-md-3">
                     <label for="toLocationSearch" class="form-label">Locatie destinatie</label>
-                    <select id="toLocationSearch" class="form-select">
-                        <option selected>oricare</option>
-                        <option value="1">Location 1</option>
-                        <option value="2">Location 2</option>
-                    </select>
+                    <input type="text" class="form-control" id="toLocationSearch" placeholder="Locatie destinatie">
                 </div>
                 <div class="col-md-3">
                     <label for="fromDate" class="form-label">De la data</label>
@@ -172,19 +156,11 @@
                 </div>
                 <div class="col-md-2">
                     <label for="transferStatus" class="form-label">Status transfer</label>
-                    <select id="transferStatus" class="form-select">
-                        <option selected>oricare</option>
-                        <option value="1">Completed</option>
-                        <option value="2">Pending</option>
-                    </select>
+                    <input type="text" class="form-control" id="transferStatus" placeholder="Status transfer">
                 </div>
                 <div class="col-md-2">
                     <label for="paymentStatus" class="form-label">Status plata</label>
-                    <select id="paymentStatus" class="form-select">
-                        <option selected>oricare</option>
-                        <option value="1">Paid</option>
-                        <option value="2">Unpaid</option>
-                    </select>
+                    <input type="text" class="form-control" id="paymentStatus" placeholder="Status plata">
                 </div>
                 <div class="col-md-12 text-end">
                     <button type="submit" class="btn btn-warning">Cautare</button>
@@ -192,6 +168,7 @@
             </form>
         </div>
     </div>
+
 
     <!-- Calendar -->
     <div class="container mt-5">
