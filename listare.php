@@ -140,7 +140,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 <script>
-// Utility function to format a date as YYYY-MM-DD
+// YYYY-MM-DD
 function formatDate(date) {
     let d = new Date(date),
         month = '' + (d.getMonth() + 1),
@@ -153,7 +153,6 @@ function formatDate(date) {
     return [year, month, day].join('-');
 }
 
-// Function to update the date in the input field
 function changeDate(days) {
     const dateInput = document.getElementById('transferDate');
     const currentDate = new Date(dateInput.value.split('/').reverse().join('-'));
@@ -161,13 +160,12 @@ function changeDate(days) {
     dateInput.value = formatDate(currentDate).split('-').reverse().join('/');
 }
 
-// Event listeners for Next and Prev buttons
 document.getElementById('prevDateBtn').addEventListener('click', function() {
-    changeDate(-1); // Subtract one day
+    changeDate(-1);
 });
 
 document.getElementById('nextDateBtn').addEventListener('click', function() {
-    changeDate(1); // Add one day
+    changeDate(1);
 });
 
 </script>
