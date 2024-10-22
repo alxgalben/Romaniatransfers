@@ -6,6 +6,8 @@
     <title>Transfer Listing</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Datepicker CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" rel="stylesheet">
     <style>
         .transfer-row {
             border-bottom: 1px solid #dee2e6;
@@ -53,7 +55,7 @@
 
 <!-- Main Content -->
 <div class="container mt-5">
-    <!-- Date and Navigation -->
+    <!-- Date Navigation -->
     <div class="d-flex justify-content-between align-items-center mb-4">
         <button class="btn btn-warning btn-sm" id="prevDateBtn">Prev</button>
         <input type="text" class="form-control w-25 text-center" id="transferDate" value="2024-10-31">
@@ -138,6 +140,33 @@
 
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- jQuery (Required for Bootstrap Datepicker) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- Bootstrap Datepicker JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        // Initialize
+        $('#transferDate').datepicker({
+            format: 'yyyy-mm-dd',
+            autoclose: true,
+            todayHighlight: true
+        });
+
+        $('#prevDateBtn').click(function () {
+            const currentDate = $('#transferDate').datepicker('getDate');
+            currentDate.setDate(currentDate.getDate() - 1);
+            $('#transferDate').datepicker('setDate', currentDate);
+        });
+
+        $('#nextDateBtn').click(function () {
+            const currentDate = $('#transferDate').datepicker('getDate');
+            currentDate.setDate(currentDate.getDate() + 1);
+            $('#transferDate').datepicker('setDate', currentDate);
+        });
+    });
+</script>
 
 <script>
 // YYYY-MM-DD
