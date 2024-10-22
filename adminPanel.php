@@ -115,59 +115,60 @@
 
     <!-- Search Reservation -->
     <div class="card mb-4">
-        <div class="card-header">Cauta o rezervare</div>
-        <div class="card-body">
-            <form class="row g-3">
-                <div class="col-md-2">
-                    <label for="id" class="form-label">Id</label>
-                    <input type="text" class="form-control" id="id" placeholder="Id">
-                </div>
-                <div class="col-md-3">
-                    <label for="fromLocationSearch" class="form-label">Locatie plecare</label>
-                    <input type="text" class="form-control" id="fromLocationSearch" placeholder="Locatie plecare">
-                </div>
-                <div class="col-md-3">
-                    <label for="flightNumber" class="form-label">Numar zbor</label>
-                    <input type="text" class="form-control" id="flightNumber" placeholder="Numar zbor">
-                </div>
-                <div class="col-md-3">
-                    <label for="toLocationSearch" class="form-label">Locatie destinatie</label>
-                    <input type="text" class="form-control" id="toLocationSearch" placeholder="Locatie destinatie">
-                </div>
-                <div class="col-md-3">
-                    <label for="fromDate" class="form-label">De la data</label>
-                    <input type="date" class="form-control" id="fromDate">
-                </div>
-                <div class="col-md-3">
-                    <label for="toDate" class="form-label">Pana la data</label>
-                    <input type="date" class="form-control" id="toDate">
-                </div>
-                <div class="col-md-2">
-                    <label for="clientName" class="form-label">Nume Client</label>
-                    <input type="text" class="form-control" id="clientName" placeholder="Nume Client">
-                </div>
-                <div class="col-md-2">
-                    <label for="phone" class="form-label">Telefon</label>
-                    <input type="tel" class="form-control" id="phone" placeholder="Telefon">
-                </div>
-                <div class="col-md-2">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" placeholder="Email">
-                </div>
-                <div class="col-md-2">
-                    <label for="transferStatus" class="form-label">Status transfer</label>
-                    <input type="text" class="form-control" id="transferStatus" placeholder="Status transfer">
-                </div>
-                <div class="col-md-2">
-                    <label for="paymentStatus" class="form-label">Status plata</label>
-                    <input type="text" class="form-control" id="paymentStatus" placeholder="Status plata">
-                </div>
-                <div class="col-md-12 text-end">
-                    <button type="submit" class="btn btn-warning">Cautare</button>
-                </div>
-            </form>
-        </div>
+    <div class="card-header">Cauta o rezervare</div>
+    <div class="card-body">
+        <form class="row g-3">
+            <div class="col-md-3">
+                <label for="id" class="form-label">Id</label>
+                <input type="text" class="form-control" id="id" placeholder="Id">
+            </div>
+            <div class="col-md-3">
+                <label for="fromLocationSearch" class="form-label">Locatie plecare</label>
+                <input type="text" class="form-control" id="fromLocationSearch" placeholder="Locatie plecare">
+            </div>
+            <div class="col-md-3">
+                <label for="flightNumber" class="form-label">Numar zbor</label>
+                <input type="text" class="form-control" id="flightNumber" placeholder="Numar zbor">
+            </div>
+            <div class="col-md-3">
+                <label for="toLocationSearch" class="form-label">Locatie destinatie</label>
+                <input type="text" class="form-control" id="toLocationSearch" placeholder="Locatie destinatie">
+            </div>
+            <div class="col-md-3">
+                <label for="fromDate" class="form-label">De la data</label>
+                <input type="date" class="form-control" id="fromDate">
+            </div>
+            <div class="col-md-3">
+                <label for="toDate" class="form-label">Pana la data</label>
+                <input type="date" class="form-control" id="toDate">
+            </div>
+            <div class="col-md-3">
+                <label for="clientName" class="form-label">Nume Client</label>
+                <input type="text" class="form-control" id="clientName" placeholder="Nume Client">
+            </div>
+            <div class="col-md-3">
+                <label for="phone" class="form-label">Telefon</label>
+                <input type="tel" class="form-control" id="phone" placeholder="Telefon">
+            </div>
+            <div class="col-md-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Email">
+            </div>
+            <div class="col-md-3">
+                <label for="transferStatus" class="form-label">Status transfer</label>
+                <input type="text" class="form-control" id="transferStatus" placeholder="Status transfer">
+            </div>
+            <div class="col-md-3">
+                <label for="paymentStatus" class="form-label">Status plata</label>
+                <input type="text" class="form-control" id="paymentStatus" placeholder="Status plata">
+            </div>
+            <div class="col-md-12 text-end">
+                <button type="submit" class="btn btn-warning">Cautare</button>
+            </div>
+        </form>
     </div>
+</div>
+
 
 
     <!-- Calendar -->
