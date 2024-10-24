@@ -20,10 +20,10 @@
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
             background-color: #fff;
             border-radius: 10px;
-            text-align: center; /* Center the logo */
+            text-align: center;
         }
         .login-box img {
-            max-width: 150px; /* Set the maximum width for the logo */
+            max-width: 150px;
             margin-bottom: 20px;
         }
         @media (max-width: 768px) {
@@ -50,7 +50,7 @@
                 <input type="password" name="password" id="password" class="form-control" placeholder="Password" required>
             </div>
             <div class="d-grid">
-                <button type="submit" class="btn btn-warning">Login</button> <!-- Warning-colored button -->
+                <button type="submit" class="btn btn-warning">Login</button>
             </div>
         </form>
     </div>
